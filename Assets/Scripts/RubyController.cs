@@ -5,7 +5,6 @@ using UnityEngine;
 public class RubyController : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +17,10 @@ public class RubyController : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Vector2 position = rigidbody2d.position;
+        Vector2 position = transform.position;
         position.x = position.x + 3.0f * horizontal * Time.deltaTime;
         position.y = position.y + 3.0f * vertical * Time.deltaTime;
-
-        rigidbody2d.MovePosition(position);
+        transform.position = position;
     }
+
 }
