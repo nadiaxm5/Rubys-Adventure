@@ -150,6 +150,7 @@ MonoBehaviour:
   speed: 3
   vertical: 0
   changeTime: 3
+  smokeEffect: {fileID: 3720143762967048670, guid: 8412d071dd831c241bf558ab70f58974, type: 3}
 --- !u!95 &2415415587209003455
 Animator:
   serializedVersion: 3
